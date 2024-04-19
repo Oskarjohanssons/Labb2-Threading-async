@@ -41,7 +41,9 @@
             oskarsThread.Join();
 
             Car winner = erminsBil.Distance > oskarsBil.Distance ? erminsBil : oskarsBil;
+            string winnerName = erminsBil.Distance > oskarsBil.Distance ? erminsBil.Name : oskarsBil.Name;
 
+            Console.WriteLine("\nAlla bilar har kommit i mål!");
 
             Console.WriteLine("\nVinnaren är: ");
             for (int i = 0; i < 5; i++)
@@ -56,8 +58,6 @@
             }
             Console.ResetColor(); 
 
-
-            Console.WriteLine("\nAlla bilar har kommit i mål!");
 
             Console.WriteLine("Race finished!");
             Console.ReadKey();
